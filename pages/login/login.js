@@ -1,20 +1,14 @@
-import React from "react";
-
-class Login extends React.Component{
-    render()
-    {
-        return
-        (
-
-
-            <div>
-                <form onSubmit>
-                    <input type="email" name="email" placeholder="digite seu email" required onChange/>
-                    <input type="password" name="passwrd" placeholder="senha" required onChange/>
-                </form>
-            </div>
-        )
-    }
+const Test = () => {
+    return (
+        <div id="loginwrapper">
+            <h1>faça login</h1>
+            <form action="loginsucess">
+                <input type="email" name="email" placeholder="digite email" required/>
+                <input type="password" name="pword" placeholder="senha" required/>
+                <button onSubmit>Logar</button>
+            </form>
+        </div>
+    );
 }
 
-export default Login;
+export default Test;
